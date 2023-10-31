@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+alias comments='grep "#.*" a2.py'
+alias mark='flake8 a2.py' 
+alias structure='grep -e "site\." -e "turbine\." a2.py' 
+alias control='grep -e "for " -e "while " a2.py'
+alias names='grep -e "i in" a2.py'
+alias repeat='grep -e "\*\*0.5" -e "sqrt" -e "\*\*\(1/2\)" a2.py' 
+alias docs='flake8 a2.py | grep -e "D101" -e "D103"' 
+alias lines='flake8 a2.py | grep -e "E501"' 
+alias globs='flake8 a2.py | grep -e "G"' 
+
